@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{026A970B-3751-44FD-9CE4-111C956BE4EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PresentationLayer</RootNamespace>
+    <AssemblyName>PresentationLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq.EagerFetching, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.EagerFetching.2.2.0\lib\net45\Remotion.Linq.EagerFetching.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddEmployeeToVideoWallForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmployeeToVideoWallForm.Designer.cs">
+      <DependentUpon>AddEmployeeToVideoWallForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAdToScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAdToScheduleForm.Designer.cs">
+      <DependentUpon>AddAdToScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddScheduleToVideoWallForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddScheduleToVideoWallForm.Designer.cs">
+      <DependentUpon>AddScheduleToVideoWallForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentVideoWallViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentVideoWallViewForm.Designer.cs">
+      <DependentUpon>RentVideoWallViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowServicesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowServicesForm.Designer.cs">
+      <DependentUpon>ShowServicesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowEmployeeServicesReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowEmployeeServicesReportForm.Designer.cs">
+      <DependentUpon>ShowEmployeeServicesReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAdsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAdsForm.Designer.cs">
+      <DependentUpon>ViewAdsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmployeeForm.Designer.cs">
+      <DependentUpon>AddEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddScheduleForm.Designer.cs">
+      <DependentUpon>AddScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddServiceForm.Designer.cs">
+      <DependentUpon>AddServiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddVideoWallForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddVideoWallForm.Designer.cs">
+      <DependentUpon>AddVideoWallForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindowForm.Designer.cs">
+      <DependentUpon>MainWindowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSchedulesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSchedulesForm.Designer.cs">
+      <DependentUpon>ManageSchedulesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageVideoWallsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageVideoWallsForm.Designer.cs">
+      <DependentUpon>ManageVideoWallsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveAdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveAdForm.Designer.cs">
+      <DependentUpon>RemoveAdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveEmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveEmployeeForm.Designer.cs">
+      <DependentUpon>RemoveEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveScheduleForm.Designer.cs">
+      <DependentUpon>RemoveScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveVideoWallForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveVideoWallForm.Designer.cs">
+      <DependentUpon>RemoveVideoWallForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowVideoWallSummaryReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowVideoWallSummaryReportForm.Designer.cs">
+      <DependentUpon>ShowVideoWallSummaryReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAdForm.Designer.cs">
+      <DependentUpon>AddAdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployeesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEmployeesForm.Designer.cs">
+      <DependentUpon>ViewEmployeesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSchedulesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSchedulesForm.Designer.cs">
+      <DependentUpon>ViewSchedulesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewVideoWallsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewVideoWallsForm.Designer.cs">
+      <DependentUpon>ViewVideoWallsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddAdToScheduleForm.resx">
+      <DependentUpon>AddAdToScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEmployeeForm.resx">
+      <DependentUpon>AddEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEmployeeToVideoWallForm.resx">
+      <DependentUpon>AddEmployeeToVideoWallForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddScheduleForm.resx">
+      <DependentUpon>AddScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddScheduleToVideoWallForm.resx">
+      <DependentUpon>AddScheduleToVideoWallForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddServiceForm.resx">
+      <DependentUpon>AddServiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddVideoWallForm.resx">
+      <DependentUpon>AddVideoWallForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindowForm.resx">
+      <DependentUpon>MainWindowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSchedulesForm.resx">
+      <DependentUpon>ManageSchedulesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageVideoWallsForm.resx">
+      <DependentUpon>ManageVideoWallsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveAdForm.resx">
+      <DependentUpon>RemoveAdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveEmployeeForm.resx">
+      <DependentUpon>RemoveEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveScheduleForm.resx">
+      <DependentUpon>RemoveScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveVideoWallForm.resx">
+      <DependentUpon>RemoveVideoWallForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAdForm.resx">
+      <DependentUpon>AddAdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentVideoWallViewForm.resx">
+      <DependentUpon>RentVideoWallViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowServicesForm.resx">
+      <DependentUpon>ShowServicesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowEmployeeServicesReportForm.resx">
+      <DependentUpon>ShowEmployeeServicesReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowVideoWallSummaryReportForm.resx">
+      <DependentUpon>ShowVideoWallSummaryReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAdsForm.resx">
+      <DependentUpon>ViewAdsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEmployeesForm.resx">
+      <DependentUpon>ViewEmployeesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSchedulesForm.resx">
+      <DependentUpon>ViewSchedulesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewVideoWallsForm.resx">
+      <DependentUpon>ViewVideoWallsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseLib\BaseLib.csproj">
+      <Project>{3667EF74-0AF7-4B9F-8CD0-BD121A66ACCA}</Project>
+      <Name>BaseLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DomainModel\DomainModel.csproj">
+      <Project>{A48DC15A-F663-45C8-8D5B-C67A63FA91FB}</Project>
+      <Name>DomainModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

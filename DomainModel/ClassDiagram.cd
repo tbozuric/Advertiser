@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DomainModel.Ad">
+    <Position X="7" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAAAAAAAFAAAAAAQgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainModel.Address">
+    <Position X="10.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAMgAAAAAAAAAAAAIABAAoAACACAAA=</HashCode>
+      <FileName>Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainModel.Employee">
+    <Position X="16.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainModel.AdNullReferenceException" Collapsed="true">
+    <Position X="20" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainModel.VideoWallNullReferenceException" Collapsed="true">
+    <Position X="20" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainModel.InvalidPersonDataException" Collapsed="true">
+    <Position X="22.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainModel.AddressNullReferenceException" Collapsed="true">
+    <Position X="22.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainModel.InvalidPriceException" Collapsed="true">
+    <Position X="22.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainModel.DateTimeRuleException" Collapsed="true">
+    <Position X="22.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainModel.InvalidValueException" Collapsed="true">
+    <Position X="22.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainModel.Person">
+    <Position X="16.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAGwAAIAAQABAgAAIAAAAAACAAAAAA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DomainModel.RentWall">
+    <Position X="12.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgACQAAAAQAAgAAAAAAAAAAAIABAAAAQQAAAAAQAAAE=</HashCode>
+      <FileName>RentWall.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_renter" />
+      <Field Name="_videoWall" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DomainModel.Schedule">
+    <Position X="9" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAAAAIAEEgAAABAwAAAgAAIAAAgAAAAAAAAA=</HashCode>
+      <FileName>Schedule.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_entries" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="DomainModel.ScheduleEntry">
+    <Position X="7" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAAAAAwAAAAAAAAAAAIAAgAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>ScheduleEntry.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_ad" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DomainModel.Service">
+    <Position X="16.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQAAAAAAAAAAgABAAIAIEAAQAAAAAQAAAAAAIAAE=</HashCode>
+      <FileName>Service.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_servicedBy" />
+      <Field Name="_failureType" />
+      <Field Name="_videoWall" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DomainModel.VideoWall">
+    <Position X="13.5" Y="3.75" Width="1.5" />
+    <AssociationLine Name="_schedules" Type="DomainModel.Schedule" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.5" Y="5.25" />
+        <Point X="10.188" Y="5.25" />
+        <Point X="10.188" Y="10.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AEACAAAEBACAAAAAAAICAEAAEFAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>VideoWall.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_location" />
+      <Field Name="_status" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_servicers" />
+      <Field Name="_schedules" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Interface Name="DomainModel.Repositories.IRepository&lt;T&gt;">
+    <Position X="18.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAgAAAAAAAAAAAEAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Repositories\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="DomainModel.FailureType">
+    <Position X="19" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>FailureType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DomainModel.VideoWallStatus">
+    <Position X="10" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>VideoWallStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
